@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* the container inside the App Parent*/
+.container{
+    display: flex;
+}
+/* main is the chilren, home about contact container children 1*/
+main{
+    width: 100%;
+}
+/* children 2 */
+.sidebar{
+    background-color: white;
+    color: white;
+    height: 100vh;
+    padding: 30px 12px;
+    width: 200px;
+}
+/* parent of navlink */
+.link{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    transition: none;
+    text-decoration: none;
+}
+
+
+/* child 1 */
+.icon{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+    color:#524345 ;
+}
+/* child 2 */
+.title{
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    color:#524345 ;
+    /* padding: 0.5rem 0; */
+    
+}
+
+.icon:hover{
+    background-color: #f7e6e8;
+    border-radius: 1.5rem;
+}
+.active .title{
+    color:#f2104d ;
+    font-family: 'Cedarville Cursive';
+}
+.active .icon{
+    color: #524345;
+    background-color: hsl(352, 100%, 93%);
+    border-radius:1.5rem ;
+}
+
+@media (max-width:840px) {
+    .sidebar{
+        width: 50px;
+        height: 100dvh;
+    }
+    .title{
+       display: none;
+    }
+    .active .icon{
+        color: #ffd9de;
+        border-radius: 0;
+        background-color: transparent;
+       
+    }
+    .icon{
+        padding: 0;
+    }
+    .link{
+        margin: 2rem 0;
+    }
+}

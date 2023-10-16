@@ -1,0 +1,64 @@
+.about-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.about-container{
+    height: 100vh;
+    width: 60%;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+h1{
+    font-family: 'Cedarville Cursive';
+    color:#f2104d ;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+p{
+    color:#f2104d ;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.about-container svg{
+    margin-top: 2rem;
+}
+
+.circle-container {
+    width: 400px; /* Adjust the width and height as needed */
+    height: 400px; /* The width and height should be equal for a perfect circle */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circle-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire circle */
+  }
+  @media screen and (max-width:840px) {
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 3vw;
+    }
+    .about-container {
+        height: 100vh;
+        margin: 0 1rem;
+        padding-top: 2rem;
+        width: 100%;
+    }
+    .circle-container{
+        display: none;
+    }
+    
+}

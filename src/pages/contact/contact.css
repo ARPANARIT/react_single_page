@@ -1,0 +1,52 @@
+#contactPage{
+    max-width: 60rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm button{
+    border: #f2104d solid 0.1rem;
+    color: #f2104d;
+    margin: 0.5rem 1rem;
+}
+
+.contactForm{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 70vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg{
+    font-size: 18px;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: hwb(353 89% 1%);
+    color: rgb(252, 123, 145);
+}
+
+h1{
+    padding: 0 5rem;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #f67597;
+    font-size: 18px;
+}
+input:focus , textarea:focus{
+    outline: none;
+}
+
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 2rem;
+    }
+}

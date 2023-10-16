@@ -1,0 +1,69 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@500&family=Roboto+Mono&display=swap');
+
+.sidenav {
+    width: 10.525rem;
+    height: 100vh; /* Adjust the width as needed */
+    background-color: white; /* Background color of the SideNav */
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-items{
+    list-style: none;
+    margin: 2rem auto;
+    cursor: pointer;
+  }
+ .nav-item{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+ }
+ .nav-text {
+  display: flex;
+  align-items: center; /* Vertically align children */
+}
+
+span{
+  font-size: 20px;
+  color: #524345;
+  font-family: 'Roboto Mono', monospace;
+}
+
+  .nav-item:hover .fa-icons{
+    background-color: #ffdde1; 
+    border-radius: 1.875rem;
+    padding: 0.5rem 1.5rem;
+    color:#f2104d ;
+  }
+.nav-item:hover span{
+  font-family: 'Cedarville Cursive';
+  color:#f2104d ;
+}
+.active span{
+  font-family: 'Cedarville Cursive';
+  color:#f2104d ;
+}
+.active {
+  background-color: #ffdde1; 
+  border-radius: 1.875rem;
+  padding: 0.5rem 1.5rem;
+  color:#f2104d ;
+}
+.nav-item .nav-text svg{
+  margin: 0 1rem;
+  color: #524345;
+}
+
+@media screen and (max-width:600px) {
+  .sidenav{
+    width: 3rem;
+    height: fit-content;
+    height: 100%;
+    display: block;
+    padding-top: 10rem;
+  }
+  
+}
+
